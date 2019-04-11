@@ -18,11 +18,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         ImageView image = (ImageView) findViewById(R.id.arms);
-        if (image.getVisibility() == View.VISIBLE) {
-            System.out.println("joe");
+        if (image.getVisibility() == View.VISIBLE) {           
             outState.putBoolean("arms", true);
         } else {
-            System.out.println("slet");
             outState.putBoolean("arms", false);
         }
         ImageView image1 = (ImageView) findViewById(R.id.shoes);
